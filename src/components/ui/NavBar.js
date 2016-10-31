@@ -17,9 +17,6 @@ export class NavBar extends React.Component {
       <div className="navbar navbar-inverse navbar-fixed-top pohina-pad" id="navbar">
         <div className="container">
           <div className="navbar-header">
-            <Link to="/">
-              <img className="pohina-navbar-logo" src="img/elo_logo.png" />
-            </Link>
             <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
@@ -37,19 +34,31 @@ export class NavBar extends React.Component {
               </li>
             </ul>
 
-            <form id="signin" className="navbar-form navbar-right" role="form">
+            <form className="navbar-form navbar-right" role="form">
               <div className="input-group">
                 <span className="input-group-addon">
                   <i className="ion-pound"></i>
                 </span>
-                <input id="email" type="email" className="form-control" name="email" value="" placeholder="Email Address" />
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  value=""
+                  placeholder="Nick"
+                />
               </div>
 
               <div className="input-group">
                 <span className="input-group-addon">
                   <i className="ion-locked"></i>
                 </span>
-                <input id="password" type="password" className="form-control" name="password" value="" placeholder="Password" />
+                <input
+                  type="password"
+                  className="form-control"
+                  name="password"
+                  value=""
+                  placeholder="Password"
+                />
               </div>
 
               <button type="submit" className="btn btn-primary">Login</button>

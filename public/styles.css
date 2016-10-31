@@ -9,7 +9,7 @@ body {
 /* General styles */
 
 .main-container {
-  margin: 65px 0 0 15px;
+  margin: 65px 15px 15px 15px;
 }
 
 .m-top {
@@ -28,6 +28,7 @@ body {
 
 .gurula-comment-container {
   border: 1px solid black;
+  overflow: hidden;
 }
 
 .gurula-comment-reputation {
@@ -48,7 +49,14 @@ body {
   margin: 0 0 0 15px;
 }
 
-.gurula-reputation-icon {
+.gurula-post-reputation-icon {
   float: left;
-  font-size: 600;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.gurula-comment-reputation-icon {
+  float: left;
+  font-size: 20px;
+  cursor: pointer;
 }
