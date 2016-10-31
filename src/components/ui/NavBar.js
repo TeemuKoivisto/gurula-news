@@ -82,7 +82,6 @@ export class NavBar extends React.Component {
   }
 
   render() {
-    console.log(this.props.user)
     const loggedIn = this.props.user.role !== undefined;
     return (
       <div id="nav">
@@ -94,7 +93,7 @@ export class NavBar extends React.Component {
 
 import { connect } from "react-redux";
 
-import { logout } from "state/auth/auth.actions";
+import { logout } from "actions/auth";
 
 const mapStateToProps = (state) => {
   return {

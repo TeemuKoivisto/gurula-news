@@ -5,3 +5,15 @@
 .m-top {
   margin-top: 15px;
 }
+
+.gurula-post-reputation {
+  float: left;
+}
+
+.gurula-comment-reputation {
+  float: left;
+}
+
+.gurula-comment-comments {
+  margin: 0 0 0 15px;
+}
