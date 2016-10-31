@@ -13,6 +13,7 @@ export default class FrontPage extends React.Component {
           {
             id: 1,
             user: {
+              id: 1,
               name: "asdf",
             },
             reputation: 10,
@@ -22,6 +23,7 @@ export default class FrontPage extends React.Component {
               {
                 id: 3,
                 user: {
+                  id: 2,
                   name: "pena",
                 },
                 reputation: 1,
@@ -31,6 +33,7 @@ export default class FrontPage extends React.Component {
                   {
                     id: 5,
                     user: {
+                      id: 1,
                       name: "asdf",
                     },
                     reputation: 1,
@@ -45,6 +48,7 @@ export default class FrontPage extends React.Component {
           {
             id: 2,
             user: {
+              id: 3,
               name: "maza",
             },
             reputation: 2,
@@ -60,14 +64,14 @@ export default class FrontPage extends React.Component {
 
   renderComment(comment) {
     return(
-      <div className="gurula-comment" key={comment.id}>
+      <div className="gurula-comment-container" key={comment.id}>
         <div className="gurula-comment-reputation">
           <i className="ion-arrow-up-a"></i>
           <span>{ comment.reputation }</span>
           <i className="ion-arrow-down-a"></i>
         </div>
         <div className="gurula-comment-topbar">
-          <span>{ comment.user.name }</span>
+          <Link to={`user/${comment.user.id}`}>{ comment.user.name }</Link>
         </div>
         <div className="gurula-comment-content">
           <span>{ comment.content }</span>
@@ -86,7 +90,7 @@ export default class FrontPage extends React.Component {
   render() {
     const post = this.state.post;
     return (
-      <div>
+      <div className="gurula-post-container">
         <div className="gurula-post-title">
           <div className="gurula-post-reputation">
             <i className="gurula-reputation-icon ion-arrow-up-a"></i>

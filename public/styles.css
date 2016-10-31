@@ -1,3 +1,13 @@
+/* Global styles */
+
+font-family: 'Russo One', sans-serif;
+
+body {
+  font-family: "Russo One", sans-serif;
+}
+
+/* General styles */
+
 .main-container {
   margin: 65px 0 0 15px;
 }
@@ -6,8 +16,18 @@
   margin-top: 15px;
 }
 
+/* Component spefic styles */
+/* Post.js */
+.gurula-post-container {
+  border: 1px solid black;
+}
+
 .gurula-post-reputation {
   float: left;
+}
+
+.gurula-comment-container {
+  border: 1px solid black;
 }
 
 .gurula-comment-reputation {
