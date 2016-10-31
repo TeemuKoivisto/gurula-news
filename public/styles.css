@@ -12,8 +12,23 @@
 
 .gurula-comment-reputation {
   float: left;
+  margin: 0 10px 0 0;
+}
+
+.gurula-comment-topbar {
+  margin: 0 10px 0 0;
+  font-weight: 600;
+}
+
+.gurula-comment-content {
+  margin: 0 10px 10px 10px;
 }
 
 .gurula-comment-comments {
   margin: 0 0 0 15px;
+}
+
+.gurula-reputation-icon {
+  float: left;
+  font-size: 600;
 }

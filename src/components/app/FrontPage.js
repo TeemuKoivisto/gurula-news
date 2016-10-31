@@ -89,9 +89,9 @@ export default class FrontPage extends React.Component {
       <div>
         <div className="gurula-post-title">
           <div className="gurula-post-reputation">
-            <i className="ion-arrow-up-a"></i>
+            <i className="gurula-reputation-icon ion-arrow-up-a"></i>
             <span>{ post.reputation }</span>
-            <i className="ion-arrow-down-a"></i>
+            <i className="gurula-reputation-icon ion-arrow-down-a"></i>
           </div>
           <h1>{post.title}</h1>
         </div>
