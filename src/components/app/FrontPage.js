@@ -27,7 +27,7 @@ export class FrontPage extends React.Component {
           <Link to={`user/${comment.user.id}`}>{ comment.user.name }</Link>
         </div>
         <div className="gurula-comment-content">
-          <span>{ comment.content }</span>
+          <p>{ comment.content }</p>
         </div>
         <div className="gurula-comment-comments">
           { comment.comments.length > 0 ?
@@ -51,6 +51,9 @@ export class FrontPage extends React.Component {
             <i className="gurula-post-reputation-icon ion-arrow-down-a"></i>
           </div>
           <h1>{post.title}</h1>
+        </div>
+        <div className="gurula-post-content">
+          <p>{ post.content }</p>
         </div>
         <div className="gurula-commentarea">
           { post.comments.map(comment =>

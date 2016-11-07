@@ -1,8 +1,10 @@
 const INITIAL_STATE = {
   posts: [
     {
-      title: "Breaking news! New news-app in Gurula announced.:!",
+      id: 1,
       reputation: 666,
+      title: "Breaking news! New news-app in Gurula announced.:!",
+      content: "Allegedly it's super awesome..",
       comments: [
         {
           id: 1,

@@ -42,6 +42,9 @@ module.exports = {
       compress: {
         warnings: false,
       },
+      mangle: {
+        except: ['$super', '$', 'exports', 'require', 'window'],
+      },
     }),
     new webpack.DefinePlugin({
       "process.env": {
